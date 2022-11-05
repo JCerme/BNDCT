@@ -10,13 +10,19 @@
         <link rel="icon" type="image/x-icon" href="./img/favicon64x64.ico">
 
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
     </head>
     <body>
-
+        <script>
+            AOS.init();
+        </script>
         <!----------------  HEADER  -------------------->
 
-        <header>
+        <header data-aos="fade-down" data-aos-duration="1000">
             <div class="header container">
                 <span class="logo"><a href="./index.html">BNDCT</a></span>
                 <nav>
@@ -44,12 +50,12 @@
 
             <article class="hero">
                 <div class="content">
-                    <h1 class="h1">BENEDICT</h1>
-                    <span>we make you, we make style</span>
+                    <h1 class="h1" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">BENEDICT</h1>
+                    <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">we make you, we make style</span>
                 </div>
-                <img class="equity-esculpture" src="./img/equity-op-w.png" alt="Equity Sculpture Image">
-                <img class="woman-esculpture" src="./img/greeksculpture-op-w.png" alt="Greek Woman Sculputure Image">
-                <img class="cloud" src="./img/cloud-op.png" alt="Cloud Image">
+                <img class="equity-esculpture" src="./img/equity-op-w.png" alt="Equity Sculpture Image" data-aos="fade-left" data-aos-duration="2000">
+                <img class="woman-esculpture" src="./img/greeksculpture-op-w.png" alt="Greek Woman Sculputure Image" data-aos="fade-right" data-aos-duration="3000">
+                <img class="cloud" src="./img/cloud-op.png" alt="Cloud Image" data-aos="zoom-out-right" data-aos-duration="3000">
             </article>
 
              <!----------------  PRODUCT SECTION  -------------------->
@@ -57,7 +63,7 @@
             <article id="prod-sect" class="container">
                 <h2>Our Products</h2>
                 <section class="products">
-                    <article class="prod">
+                    <article class="prod" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="content">
                             <div class="img">
                                 <img src="./img/LongSleeveStyle.jpg" alt="Long Sleeve Style Shirt - Benedict">
@@ -72,7 +78,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="prod">
+                    <article class="prod" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                         <div class="content">
                             <div class="img">
                                 <img src="./img/CamooShortsOffsize.jpg" alt="Camoo Shorts Offsize - Benedict">
@@ -87,7 +93,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="prod">
+                    <article class="prod" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
                         <div class="content">
                             <div class="img">
                                 <img src="./img/SomethingWrongHoddie.jpg" alt="Something Wrong Hoodie - Benedict">
@@ -102,7 +108,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="prod">
+                    <article class="prod" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
                         <div class="content">
                             <div class="img">
                                 <img src="./img/SharkSilverChain.jpg" alt="Shark Silver Chain - Benedict">
@@ -118,8 +124,8 @@
                         </div>
                     </article>
                 </section>
-                <div class="seemoreprod">
-                    <a href="./shop.html">see more products >></a>
+                <div class="seemoreprod" data-aos="fade-in" data-aos-delay="2000" data-aos-duration="500">
+                    <a href="./pages/shop.html">see more products >></a>
                 </div>
             </article>
         </section>
@@ -129,8 +135,8 @@
         <section class="black-banner">
             <div class="container">
                 <article class="content">
-                    <h2>WE MAKE YOU,<br> WE MAKE STYLE</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled.</p>
+                    <h2 data-aos="fade-right" data-aos-duration="1000">WE MAKE YOU,<br> WE MAKE STYLE</h2>
+                    <p data-aos="fade-right" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standart dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled.</p>
                 </article>
                 <article class="banner-photo-sect">
                     <img src="./img/about-us.jpg" alt="About Us - Benedict">
@@ -140,7 +146,7 @@
 
         <!----------------  CONTACT US  -------------------->
 
-        <div class="contact-us">
+        <div class="contact-us" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <div class="container">
                 <div class="overlay">
                     <h2>CONTACT US</h2>
