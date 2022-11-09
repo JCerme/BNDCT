@@ -11,17 +11,22 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/styles.css">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
-
+        <script>
+            AOS.init();
+        </script>
         <!----------------  HEADER  -------------------->
 
-        <header>
+        <header data-aos="fade-down" data-aos-duration="1000">
             <div class="header container">
                 <span class="logo"><a href="../index.html">BNDCT</a></span>
                 <nav>
                     <ul>
-                        <li class="menu-li "><a href="../index.html">home</a></li>
+                        <li class="menu-li"><a href="../index.html">home</a></li>
                         <li class="menu-li"><a href="./shop.html">shop</a></li>
                         <li class="menu-li"><a href="./about-us.html">about us</a></li>
                         <li class="menu-li active"><a href="./contact.html">contact</a></li>
@@ -31,6 +36,7 @@
                 <div class="icons">
                     <img class="shoppingcart" src="../img/shooping-cart.svg" alt="Shopping Cart Icon">
                     <img class="user" src="../img/account_icon.svg" alt="Account Icon">
+                    <img class="burger" src="../img/burger-btn.svg" alt="Burger Button">
                 </div>
             </div>
         </header>

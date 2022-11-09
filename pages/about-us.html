@@ -11,12 +11,17 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/styles.css">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
-
+        <script>
+            AOS.init();
+        </script>
         <!----------------  HEADER  -------------------->
 
-        <header>
+        <header data-aos="fade-down" data-aos-duration="1000">
             <div class="header container">
                 <span class="logo"><a href="../index.html">BNDCT</a></span>
                 <nav>
@@ -31,6 +36,7 @@
                 <div class="icons">
                     <img class="shoppingcart" src="../img/shooping-cart.svg" alt="Shopping Cart Icon">
                     <img class="user" src="../img/account_icon.svg" alt="Account Icon">
+                    <img class="burger" src="../img/burger-btn.svg" alt="Burger Button">
                 </div>
             </div>
         </header>
@@ -46,7 +52,7 @@
             <div class="img-sect container">
                 <img src="../img/og-vandals.webp" alt="greek picture with old and vandal style" width="100%">
             </div>
-            <div class="img-text">
+            <div class="img-text container">
                 <p>This is art, representing vandalism is our ideology</p>
             </div>
             <div class="sect1 container">
