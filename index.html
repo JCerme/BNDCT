@@ -25,7 +25,7 @@
         <header data-aos="fade-down" data-aos-duration="1000">
             <div class="header container">
                 <span class="logo"><a href="./index.html">BNDCT</a></span>
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li class="menu-li active"><a href="./index.html">home</a></li>
                         <li class="menu-li"><a href="./pages/shop.html">shop</a></li>
@@ -35,12 +35,22 @@
                     </ul>
                 </nav>
                 <div class="icons">
-                    <img class="shoppingcart" src="./img/shooping-cart.svg" alt="Shopping Cart Icon">
-                    <img class="user" src="./img/account_icon.svg" alt="Account Icon">
-                    <img class="burger" src="./img/burger-btn.svg" alt="Burger Button">
+                    <img id="cartBtn" class="shoppingcart" src="./img/shooping-cart.svg" alt="Shopping Cart Icon">
+                    <img id="accountBtn" class="user" src="./img/account_icon.svg" alt="Account Icon">
+                    <img id="burgerBtn" class="burger" src="./img/burger-btn.svg" alt="Burger Button">
                 </div>
             </div>
         </header>
+        <nav id="navMobile" class="dnone">
+            <img id="closeBtn" src="./img/close.svg" alt="Close Button">
+            <ul>
+                <li class="menu-li active"><a href="./index.html">home</a></li>
+                <li class="menu-li"><a href="./pages/shop.html">shop</a></li>
+                <li class="menu-li"><a href="./pages/about-us.html">about us</a></li>
+                <li class="menu-li"><a href="./pages/contact.html">contact</a></li>
+                <li class="menu-li"><a href="./pages/care.html">care</a></li>
+            </ul>
+        </nav>
 
         <!----------------  TOP SECTION  -------------------->
 
@@ -165,7 +175,11 @@
                             <label for="mess">Message:</label><br>
                             <textarea name="mess" id="mess" rows="7" placeholder="Write here your message and we will respond you ASAP"></textarea>
                         </div>
-                        <button type="submit">send the filled form >></button>
+                        <button type="submit">
+                            <div>
+                                <p>send the filled form >></p>
+                            </div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -214,6 +228,10 @@
                 </div>
             </div>
             <div class="copyright">All Rights Reserved © 2022 | Jorge Cermeño Alfaro</div>
+
+
+            <script src="./js/menu-mobile.js"></script>
+            <script src="./js/header-scroll.js"></script>
         </footer>
     </body>
 
