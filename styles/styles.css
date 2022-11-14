@@ -77,8 +77,59 @@ h1, h2, h3, h4, h5, h6{
     background-color: black;
     color: white;
 }
-
-
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 99999999;
+}
+.link{
+    width: 30px;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 99999999;
+}
+.link::before{
+    content: '';
+    width: 10px;
+    height: 1px;
+    top: 3px;
+    left: 20px;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 99999999;
+    transform: rotate(-45deg);
+    border-bottom: 1px solid black;
+}
+.link::after{
+    content: '';
+    width: 10px;
+    height: 1px;
+    top: -5px;
+    left: 20px;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 99999999;
+    transform: rotate(45deg);
+    border-bottom: 1px solid black;
+}
 /**** CONTAINERS ****/
 .container{
     width: 80% !important;
