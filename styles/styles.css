@@ -305,7 +305,7 @@ footer{
     /** hero section **/
 
 .top-sect .hero{
-    height: 40vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,37 +313,39 @@ footer{
     text-align: center;
     font-size: 26px;
     font-weight: 300;
-    overflow-x: hidden;
 }
 .top-sect .hero img{
     position: absolute;
 }
 .top-sect .hero .equity-esculpture{
-    right: -20%;
-    bottom:0;
-    width: 55%;
+    right: 0;
+    bottom:-150;
+    width: 100%;
     filter: brightness(1.2);
+    opacity: 0.3 !important;
+    z-index:-1;
 }
 .top-sect .hero .woman-esculpture{
     left: 0;
     bottom:0;
     width: 40%;
     filter: brightness(1.2);
+    display: none;
 }
 .top-sect .hero .cloud{
-    top:25%;
-    left:7.5%;
+    top:27.5%;
+    left:60%;
     width: 30%;
     filter: brightness(1.1);
 }
 .top-sect .hero h1{
-    font-size: 90px;
+    font-size: 115px;
     margin: 0;
     padding: 0;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
 }
 .top-sect .hero .content span{
-    font-size: 9px;
+    font-size: 13px;
     letter-spacing: 5;
 }
 
@@ -353,6 +355,7 @@ footer{
 
 #prod-sect{
     text-align: center;
+    margin-top: 0;
 }
 #prod-sect h2{
     font-size: 32px;
@@ -1081,6 +1084,7 @@ footer{
         text-align: center;
         font-size: 26px;
         font-weight: 300;
+        overflow-x: hidden;
     }
     .top-sect .hero img {
         position: absolute;
@@ -1091,12 +1095,14 @@ footer{
         width: 36%;
         filter: brightness(1.2);
         z-index: 0;
+        opacity: 1 !important;
     }
     .top-sect .hero .woman-esculpture {
         left: 0;
         bottom: 0;
         width: 26%;
         filter: brightness(1.2);
+        display: block;
     }
     .top-sect .hero .cloud {
         top: 25%;
