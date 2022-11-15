@@ -589,6 +589,30 @@ footer{
 #shop .shop-content{
     display: flex;
 }
+#shop #filterBtn{
+    width: 100%;
+    background-color: white;
+    font-size: 21px;
+    font-family: "THUNDER", "Helvetica Neue", Helvetica, Arial;
+    letter-spacing: 5;
+    border: 1px solid black;
+    padding: 10px 30px;
+    position: relative;
+    background-image: url(../img/filter_icon.svg);
+    background-size: 20px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+#shop #filterBtn:active, #shop #filterBtn:hover, #shop #filterBtn.active{
+    background-color: black;
+    color: white;
+}
+#shop #filterBtn.active::before{
+    content: '✖';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
 #shop .shop-content .filters{
     flex:25%;
     padding-right: 50px;
@@ -691,7 +715,12 @@ footer{
     text-decoration: line-through;
     margin-right: 5px;
 }
-
+#shop .container:has(#filterBtn){
+    margin-bottom: 0;
+}
+#shop .container:has(.filters){
+    margin-top: 25px;
+}
 
 
 
@@ -1359,9 +1388,20 @@ footer{
     #prod-sect .shop-content .products {
         padding: 0;
     }
+    #shop .shop-content .filters{
+        max-height: 0px;
+        height: auto;
+        overflow: hidden;
+        opacity: 1;
+        transition: 600ms;
+    }
+    #shop .shop-content .filters.active{
+        max-height:600px;
+        height: auto;
+        opacity: 1;
+        transition: 600ms;
+    }
 }
-
-
     
     
 
