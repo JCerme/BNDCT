@@ -69,6 +69,7 @@ body{
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
     font-weight: 400;
     cursor: none;
+    overflow-x: hidden;
 }
 body a{
     cursor: none;
