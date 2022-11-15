@@ -1341,11 +1341,15 @@ footer{
     #shop .products{
         grid-template-columns: repeat(3, 1fr);
     }
+}
+@media screen and (min-width:1150px) and (max-width: 1480px){
     #prod-sect .products{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #prod-sect .products .prod:last-child{
+        display: none;
     }
 }
-
 @media screen and (max-width: 1480px) {
     #shop .shop-content, #prod-sect .shop-content{
         flex-direction: column;
