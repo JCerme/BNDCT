@@ -68,6 +68,10 @@ body{
     margin: 0;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
     font-weight: 400;
+    cursor: none;
+}
+body a{
+    cursor: none;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "THUNDER", "Helvetica Neue", Helvetica, Arial;
@@ -83,8 +87,6 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid rgba(0,0,0,1);
     border-radius: 50%;
     position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
     pointer-events: none;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
@@ -92,6 +94,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .link{
     width: 30px;
+    margin-top: 15px;
     height: 1px;
     border: 0;
     border-bottom: 1px solid black;
