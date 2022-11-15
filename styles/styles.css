@@ -119,8 +119,6 @@ h1, h2, h3, h4, h5, h6{
     border-bottom: 1px solid black;
     border-radius: 0;
     position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
     pointer-events: none;
     z-index: 99999999;
 }
@@ -131,8 +129,6 @@ h1, h2, h3, h4, h5, h6{
     top: 3px;
     left: 20px;
     position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
     pointer-events: none;
     z-index: 99999999;
     transform: rotate(-45deg);
@@ -145,8 +141,6 @@ h1, h2, h3, h4, h5, h6{
     top: -5px;
     left: 20px;
     position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
     pointer-events: none;
     z-index: 99999999;
     transform: rotate(45deg);
@@ -444,6 +438,9 @@ footer{
     text-align: left;
     gap: 10px;
 }
+#prod-sect .products a{
+    text-decoration: none;
+}
 #prod-sect .prod{
     background-color: white;
     width: 100%;
@@ -609,6 +606,9 @@ footer{
 #shop .shop-content{
     display: flex;
     flex-direction: column;
+}
+#shop .shop-content .products a{
+    text-decoration: none;
 }
 #shop #filterBtn{
     width: 100%;
