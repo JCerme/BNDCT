@@ -1319,6 +1319,12 @@ footer{
     #cares .sect1 .parraf, #cares .sect1 a{
         padding-left: 50px;
     }
+    #cares .sect2 .content{
+        order: 0;
+    }
+    #cares .sect2 img{
+        order: 1;
+    }
 }
 @media screen and (min-width: 768px) and (max-width:1150px){
     #shop .products, #prod-sect .products {
