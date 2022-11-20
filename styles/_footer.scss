@@ -1,0 +1,68 @@
+/**** FOOTER ****/
+footer{
+    background: linear-gradient(135deg, white,#f1f1f1);
+    .footer{
+        display: grid;
+        grid-template-areas: "category category category category logofoot logofoot"
+        "policy policy policy policy logofoot logofoot";
+        align-items: center;
+        padding: 50px 0;
+        margin: 0 auto;
+        .logo {
+            grid-area: logofoot;
+            .ptext{
+                font-family: "THUNDER", "Helvetica Neue", Arial, Helvetica, sans-serif;
+                font-weight: 800;
+                font-size: 60px;
+                display: block;
+                margin-bottom: -20px;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+            }
+            .stext{
+                display: none;
+            }
+        }
+        h3{
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: 2.5;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .categories{
+            grid-area: category;
+            margin-bottom: 20px;
+        }
+        .support{
+            display: none;
+        }
+        .policy{
+            grid-area: policy;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+            font-size: 18px;
+            letter-spacing: 2.5;
+            font-weight: 300;
+            line-height: 1;
+            li a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 20px;
+        color: black;
+        font-weight: 300;
+        letter-spacing: 2.5;
+        text-transform: uppercase;
+        margin: 0 50px;
+    }
+}

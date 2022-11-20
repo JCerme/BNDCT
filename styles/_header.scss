@@ -1,0 +1,127 @@
+/**** HEADER ****/
+header{
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 0;
+    position: relative;
+    transition: 500ms;
+    .header{
+        width: 80%;
+        margin:0 auto;
+        display: grid;
+        grid-template-areas:
+        "logo nav nav nav nav icons"
+        ;
+        align-items: center;
+        .logo{
+            grid-area: logo;
+            justify-self: start;
+            font-family: "THUNDER", "Helvetica Neue", Helvetica, Arial;
+            font-size: 30px;
+            font-weight: 100;
+            margin-bottom: -10px;   /* Ya que la fuente trae un margen abajo*/
+            margin-top: -5px;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .icons{
+            grid-area: icons;
+            justify-self: end;
+            display: flex;
+            align-items: center;
+            img{
+                transition: 300ms;
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    transition: 300ms;
+                    outline: 1px solid black;
+                }
+            }
+            .shoppingcart{
+                width: 28px;
+                margin-right: 10px;
+                padding: 4px;
+            }
+            .user{
+                width: 28px;
+                margin-right: 10px;
+            }
+            .burger{
+                width: 29px;
+                grid-area: nav;
+                justify-self: center;
+                padding: 7px 5px;
+            }
+        }
+        nav{
+            display: none;
+        }
+    }
+}
+header.bgVisible{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 500ms;
+}
+#navMobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    transition: 300ms;
+    z-index: 9999999999;
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li{
+            margin: 40px 0;
+            transition: 300ms;
+            font-weight: 300;
+            &:hover{
+                transform: scale(1.5);
+                transition: 300ms;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 28px;
+                letter-spacing: 7.5;
+                transition: 300ms;
+                &:hover{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 28px;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+    #closeBtn{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 50px;
+        cursor: pointer;
+        transition: 300ms;
+    }
+}
+#navMobile.dnone{
+    opacity: 0;
+    top: -200;
+    z-index: -1;
+}

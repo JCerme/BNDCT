@@ -1,0 +1,48 @@
+/**** GLOBAL ****/
+html{
+    *{
+        cursor: none;
+        box-sizing: border-box;
+        &::selection{
+            background-color: black;
+            color: white;
+        }
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
+        font-weight: 400;
+        overflow-x: hidden;
+        /* titles */
+        h1, h2, h3, h4, h5, h6{
+            font-family: "THUNDER", "Helvetica Neue", Helvetica, Arial;
+            font-weight: 800;
+        }
+         /* cursor 
+        .cursor{
+            display: none;
+        }*/
+        /* containers */
+        .container{
+            width: 80% !important;
+            margin: 50px auto;
+        }
+    }
+    /* webkit */
+    ::-webkit-{
+        &scrollbar {
+        width: 10px;
+        }
+        &scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+            border-left: 1px solid black;
+        }
+        &scrollbar-thumb {
+            background: black;
+        }
+        &scrollbar-thumb:hover {
+            background: #333;
+        }
+    }
+}
