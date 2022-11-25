@@ -63,12 +63,12 @@ html * {
   box-sizing: border-box;
 }
 html *::-moz-selection {
-  background-color: black;
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 html *::selection {
-  background-color: black;
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 html body {
   padding: 0;
@@ -96,10 +96,10 @@ html ::-webkit-scrollbar {
 }
 html ::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.2);
-  border-left: 1px solid black;
+  border-left: 1px solid rgb(0, 0, 0);
 }
 html ::-webkit-scrollbar-thumb {
-  background: black;
+  background: rgb(0, 0, 0);
 }
 html ::-webkit-scrollbar-thumb:hover {
   background: #333;
@@ -112,7 +112,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999999;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255, 255, 255);
   padding: 10px 0;
   position: relative;
   transition: 500ms;
@@ -134,7 +134,7 @@ header .header .logo {
   margin-top: -5px;
 }
 header .header .logo a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 header .header .icons {
@@ -148,9 +148,9 @@ header .header .icons img {
   cursor: pointer;
 }
 header .header .icons img:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: 300ms;
-  outline: 1px solid black;
+  outline: 1px solid rgb(0, 0, 0);
 }
 header .header .icons .shoppingcart {
   width: 28px;
@@ -183,7 +183,7 @@ header.bgVisible {
   width: 100%;
   height: 100vh;
   opacity: 1;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,14 +208,14 @@ header.bgVisible {
 }
 #navMobile ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 28px;
   letter-spacing: 7.5;
   transition: 300ms;
 }
 #navMobile ul li a:hover {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 28px;
   transition: 300ms;
 }
@@ -236,7 +236,7 @@ header.bgVisible {
 
 /**** FOOTER ****/
 footer {
-  background: linear-gradient(135deg, white, #f1f1f1);
+  background: linear-gradient(135deg, rgb(255, 255, 255), #f1f1f1);
 }
 footer .footer {
   display: grid;
@@ -249,6 +249,7 @@ footer .footer .logo {
   grid-area: logofoot;
 }
 footer .footer .logo .ptext {
+  color: rgb(0, 0, 0);
   font-family: "THUNDER", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 60px;
@@ -259,9 +260,11 @@ footer .footer .logo .ptext {
   text-orientation: upright;
 }
 footer .footer .logo .stext {
+  color: rgb(0, 0, 0);
   display: none;
 }
 footer .footer h3 {
+  color: rgb(0, 0, 0);
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 2.5;
@@ -290,13 +293,13 @@ footer .footer ul {
 }
 footer .footer ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 footer .copyright {
   text-align: center;
   font-size: 12px;
   padding-bottom: 20px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 300;
   letter-spacing: 2.5;
   text-transform: uppercase;
@@ -344,12 +347,14 @@ footer .copyright {
   filter: brightness(1.1);
 }
 .top-sect .hero h1 {
+  color: rgb(0, 0, 0);
   font-size: 115px;
   margin: 0;
   padding: 0;
   margin-bottom: -20px;
 }
 .top-sect .hero .content span {
+  color: rgb(0, 0, 0);
   font-size: 13px;
   letter-spacing: 5;
 }
@@ -358,6 +363,7 @@ footer .copyright {
   margin-top: 0;
 }
 .top-sect #prod-sect h2 {
+  color: rgb(0, 0, 0);
   font-size: 32px;
   font-weight: 100;
   letter-spacing: 10;
@@ -373,10 +379,11 @@ footer .copyright {
   text-decoration: none;
 }
 .top-sect #prod-sect .products a .prod {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 300px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0px;
   position: relative;
 }
 .top-sect #prod-sect .products a .prod:hover {
@@ -399,7 +406,7 @@ footer .copyright {
 }
 .top-sect #prod-sect .products a .prod .content {
   padding: 10px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .top-sect #prod-sect .products a .prod .content h3 {
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -415,11 +422,11 @@ footer .copyright {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .top-sect #prod-sect .products a .prod .prod-footer .arrow {
   font-size: 24px;
@@ -438,7 +445,7 @@ footer .copyright {
   font-weight: 700;
   margin: 35px 0;
   letter-spacing: 2.5;
-  color: black;
+  color: rgb(0, 0, 0);
   position: relative;
   text-decoration: none;
   padding: 0 10px;
@@ -450,7 +457,7 @@ footer .copyright {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   transition: 300ms;
 }
 .top-sect #prod-sect .seemoreprod a::before:hover {
@@ -467,19 +474,19 @@ footer .copyright {
 }
 
 .black-banner {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
 }
 .black-banner h2::-moz-selection, .black-banner .black-banner p::-moz-selection {
-  background-color: white !important;
-  color: black !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
 }
 .black-banner h2::selection, .black-banner .black-banner p::selection {
-  background-color: white !important;
-  color: black !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
 }
 .black-banner article {
-  color: white;
+  color: rgb(255, 255, 255);
   flex: 50%;
   height: 100%;
 }
@@ -514,7 +521,8 @@ footer .copyright {
   padding-bottom: 100px;
 }
 #shop .hero {
-  background: linear-gradient(135deg, white, #f1f1f1);
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgb(255, 255, 255), #f1f1f1);
   height: 300px;
   display: flex;
   justify-content: center;
@@ -554,9 +562,9 @@ footer .copyright {
 }
 #shop .shop-content .filters .orderby-select {
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
   letter-spacing: 2.5;
 }
@@ -568,10 +576,11 @@ footer .copyright {
   margin-left: 10px;
 }
 #shop .shop-content .filters .categories button {
+  color: rgb(0, 0, 0);
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
   letter-spacing: 2.5;
 }
@@ -591,19 +600,16 @@ footer .copyright {
 #shop .products a {
   text-decoration: none;
 }
-#shop .products:hover {
-  box-shadow: rgb(0, 0, 0) 7.5px 7.5px 0px;
-}
 #shop .products .prod {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 300px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   position: relative;
 }
 #shop .products .prod .content {
   padding: 10px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 #shop .products .prod .content h3 {
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -619,11 +625,11 @@ footer .copyright {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #shop .products .prod .prod-footer .arrow {
   font-size: 24px;
@@ -633,6 +639,9 @@ footer .copyright {
   color: gray;
   text-decoration: line-through;
   margin-right: 5px;
+}
+#shop .products .prod:hover {
+  box-shadow: rgb(0, 0, 0) 7.5px 7.5px 0px;
 }
 #shop .products .img {
   width: 100%;
@@ -650,12 +659,13 @@ footer .copyright {
      object-position: center;
 }
 #shop #filterBtn {
+  color: rgb(0, 0, 0);
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   font-size: 21px;
   font-family: "THUNDER", "Helvetica Neue", Helvetica, Arial;
   letter-spacing: 5;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px 30px;
   position: relative;
   background-image: url(../img/filter_icon.svg);
@@ -664,8 +674,8 @@ footer .copyright {
   background-repeat: no-repeat;
 }
 #shop #filterBtn:active, #shop #filterBtn:hover, #shop #filterBtn.active {
-  background-color: black;
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 #shop #filterBtn:active::before {
   content: "✖";
@@ -688,7 +698,8 @@ footer .copyright {
   padding-bottom: 100px;
 }
 #about-us .hero {
-  background: linear-gradient(135deg, white, #f1f1f1);
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgb(255, 255, 255), #f1f1f1);
   height: 300px;
   display: flex;
   justify-content: center;
@@ -696,6 +707,7 @@ footer .copyright {
   padding-top: 64px; /* los pixeles que ocupa el header */
 }
 #about-us .hero h1 {
+  color: rgb(0, 0, 0);
   font-size: 68px;
   text-align: center;
   font-weight: 200;
@@ -737,6 +749,7 @@ footer .copyright {
   flex: 50%;
 }
 #about-us .sect1 .parraf h2 {
+  color: rgb(0, 0, 0);
   font-size: 42px;
   letter-spacing: 5;
   margin-top: 0;
@@ -746,7 +759,8 @@ footer .copyright {
 /*********************************************************/
 /**** CONTACT ****/
 #contact .hero {
-  background: linear-gradient(135deg, white, #f1f1f1);
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgb(255, 255, 255), #f1f1f1);
   height: 300px;
   display: flex;
   justify-content: center;
@@ -755,6 +769,7 @@ footer .copyright {
   width: 100%;
 }
 #contact .hero h1 {
+  color: rgb(0, 0, 0);
   font-size: 68px;
   text-align: center;
   font-weight: 200;
@@ -769,6 +784,7 @@ footer .copyright {
   font-weight: 700;
 }
 .contact-us h2 {
+  color: rgb(0, 0, 0);
   text-align: left;
   font-size: 42px;
   margin: 0;
@@ -791,6 +807,7 @@ footer .copyright {
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 .contact-us .container form label {
+  color: rgb(0, 0, 0);
   font-size: 18px;
   letter-spacing: 2.5;
 }
@@ -800,9 +817,9 @@ footer .copyright {
   margin: 10px 0 15px 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
   background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+  color: rgb(0, 0, 0);
   border: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(0, 0, 0);
   letter-spacing: 1.5;
 }
 .contact-us .container form .namemail {
@@ -817,10 +834,10 @@ footer .copyright {
   margin-right: 20px;
 }
 .contact-us .container form button {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: none;
   padding: 10px 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 2.5;
@@ -829,7 +846,7 @@ footer .copyright {
   overflow: hidden;
 }
 .contact-us .container form button p {
-  border-right: 0.15em solid white;
+  border-right: 0.15em solid rgb(255, 255, 255);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -868,7 +885,7 @@ footer .copyright {
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: rgb(255, 255, 255);
   }
 }
 @keyframes blink-caret {
@@ -876,7 +893,7 @@ footer .copyright {
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: rgb(255, 255, 255);
   }
 }
 /*********************************************************/
@@ -885,7 +902,8 @@ footer .copyright {
   padding-bottom: 100px;
 }
 #cares .hero {
-  background: linear-gradient(135deg, white, #f1f1f1);
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgb(255, 255, 255), #f1f1f1);
   height: 300px;
   display: flex;
   justify-content: center;
@@ -893,45 +911,48 @@ footer .copyright {
   padding-top: 64px; /* los pixeles que ocupa el header */
 }
 #cares .hero h1 {
+  color: rgb(0, 0, 0);
   font-size: 68px;
   text-align: center;
   font-weight: 200;
   letter-spacing: 5;
 }
-#cares .hero div:not(.hero) {
+#cares div:not(.hero) {
   display: flex;
+  flex-direction: column;
   justify-content: stretch;
   align-items: flex-start;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: 1.5;
 }
-#cares .hero div:not(.hero) img {
+#cares div:not(.hero) img {
   width: 100%;
-  margin-bottom: 50px;
-  flex: 50%;
-}
-#cares .hero div:not(.hero) .content .parraf {
   flex: 50%;
   margin-bottom: 50px;
 }
-#cares .hero div:not(.hero) .content .parraf h2 {
+#cares div:not(.hero) .content .parraf {
+  flex: 50%;
+  margin-bottom: 50px;
+}
+#cares div:not(.hero) .content .parraf h2 {
+  color: rgb(0, 0, 0);
   font-size: 42px;
   letter-spacing: 5;
   margin-top: 0;
   margin-bottom: -10px;
   line-height: 1;
 }
-#cares .hero div:not(.hero) .content a {
+#cares div:not(.hero) .content a {
   color: gray;
   text-decoration: none;
   padding: 10px 20px;
   border: solid 1px gray;
 }
-#cares .hero :nth-child(2) img {
+#cares div:not(.hero):nth-child(3) img {
   order: 0;
 }
-#cares .hero :nth-child(2) .content {
+#cares div:not(.hero):nth-child(3) .content {
   order: 1;
 }
 
@@ -958,7 +979,7 @@ footer .copyright {
     margin-top: 15px;
     height: 1px;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
     border-radius: 0;
     position: absolute;
     pointer-events: none;
@@ -974,7 +995,7 @@ footer .copyright {
     pointer-events: none;
     z-index: 99999999;
     transform: rotate(-45deg);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   .link::after {
     content: "";
@@ -986,7 +1007,7 @@ footer .copyright {
     pointer-events: none;
     z-index: 99999999;
     transform: rotate(45deg);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   /* container */
   .container {
@@ -1028,7 +1049,7 @@ footer .copyright {
   }
   header .header nav ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 0 5px;
     position: relative;
   }
@@ -1039,7 +1060,7 @@ footer .copyright {
     bottom: -3px;
     width: 0%;
     height: 1px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     transition: 500ms cubic-bezier(0.75, 0, 0.25, 1);
     z-index: -1;
   }
@@ -1123,7 +1144,7 @@ footer .copyright {
   }
   footer .footer div:not(.logo) ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
   }
   footer .footer .categories {
     display: block;
@@ -1146,7 +1167,7 @@ footer .copyright {
   }
   /* top section */
   .top-sect {
-    background: linear-gradient(135deg, white, #f1f1f1);
+    background: linear-gradient(135deg, rgb(255, 255, 255), #f1f1f1);
     padding-bottom: 100px;
   }
   .top-sect .hero {
@@ -1201,15 +1222,15 @@ footer .copyright {
     flex: 75%;
   }
   .top-sect #prod-sect .products #prod-sect .prod {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     min-width: 250px;
     height: 400px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     position: relative;
   }
   .top-sect #prod-sect .products #prod-sect .prod .content {
     padding: 15px;
-    color: black;
+    color: rgb(0, 0, 0);
   }
   .top-sect #prod-sect .products #prod-sect .prod .content h3 {
     font-size: 24px;
@@ -1270,15 +1291,15 @@ footer .copyright {
     grid-template-columns: repeat(2, 1fr);
   }
   #shop .products .prod {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     min-width: 250px;
     height: 400px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     position: relative;
   }
   #shop .products .prod .content {
     padding: 15px;
-    color: black;
+    color: rgb(0, 0, 0);
   }
   #shop .products .prod .content h3 {
     font-size: 24px;
@@ -1313,8 +1334,25 @@ footer .copyright {
   #cares div:not(.hero) {
     flex-direction: row;
   }
-  #cares .sect1 img {
+  #cares div:not(.hero) img {
     width: 50%;
+  }
+  #cares div:not(.hero) .content {
+    flex-direction: column;
+  }
+  #cares div:not(.hero) .content .parraf {
+    flex-direction: column;
+  }
+  #cares div:not(.hero):nth-child(3) img {
+    order: 1;
+  }
+  #cares div:not(.hero):nth-child(3) .content {
+    order: 0;
+  }
+  #cares .sect1 {
+    flex-direction: row;
+  }
+  #cares .sect1 img {
     height: auto;
     padding-right: 50px;
     margin: 0;
@@ -1323,7 +1361,6 @@ footer .copyright {
     padding-left: 50px;
   }
   #cares .sect2 img {
-    width: 50%;
     height: auto;
     padding-left: 50px;
     margin: 0;
@@ -1359,6 +1396,9 @@ footer .copyright {
   .top-sect #prod-sect .products a:last-child {
     display: none;
   }
+  #shop .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 1480px) {
   #shop .shop-content {
@@ -1372,13 +1412,16 @@ footer .copyright {
     transition: 600ms;
     padding-right: 50px;
   }
+  #shop .shop-content .products {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    flex: 75%;
+  }
   #shop #filterBtn {
     display: none;
   }
-  #prod-sect .shop-content {
-    flex-direction: row;
-  }
-  #prod-sect .shop-content .products {
+  #prod-sect .products {
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */

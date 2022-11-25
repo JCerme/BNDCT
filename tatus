@@ -1,0 +1,161 @@
+[33mcommit 17f9b0d7c99949a1477c88f07cc2c143c1b674bc[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Sun Nov 20 02:27:31 2022 +0100
+
+    migrate to SASS
+
+[33mcommit a18acd31469ce5e02364a6eba67594bbc04dac7d[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Sat Nov 19 19:05:53 2022 +0100
+
+    PreEntrega2+Cermeno
+
+[33mcommit 578e57b48a192c226160aa1aa80234761da28c3d[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Wed Nov 16 12:04:58 2022 +0100
+
+    mobile cursor hidden
+
+[33mcommit cf99f944f234a8804cb0c309217612233ccb5504[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 13:13:32 2022 +0100
+
+    link in products
+
+[33mcommit 5999585c9bdc3369d8e81d5b7088b53cf19e3804[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 13:01:44 2022 +0100
+
+    scrollbar
+
+[33mcommit 9b92909bc110b857bd5d47ced65155d7c03115b3[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 12:52:59 2022 +0100
+
+    filters pc fixed
+
+[33mcommit f205c2b9117489080a267bc4c46ed63c05f56e6a[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 10:44:43 2022 +0100
+
+    filters js
+
+[33mcommit e1178b20f885e0e61524679d66607057ea0909bf[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 09:08:00 2022 +0100
+
+    update responsive products
+
+[33mcommit 936da5688338288656d1f824b8aeb70754eda6c2[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 08:49:17 2022 +0100
+
+    care/sect2 pc fixed
+
+[33mcommit 5c67271702760456a883cffa796f80ac396c4c49[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 08:47:38 2022 +0100
+
+    overflow-x
+
+[33mcommit 61dbedc97abe1f131fcb48b140ff05e2d842a0c6[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 01:52:11 2022 +0100
+
+    redesign cursor
+
+[33mcommit b02169f0e5e340c210ba1cc7b64ad01827b458a5[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 01:51:41 2022 +0100
+
+    relink cursor
+
+[33mcommit a4fc8b42adb64daf938c26b0ee55f7436ef4da98[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 00:37:27 2022 +0100
+
+    cursor shop
+
+[33mcommit 2cbfefffebec43af7c76406f49ca1fb3516934f5[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 00:37:06 2022 +0100
+
+    cursor contact
+
+[33mcommit 6b6552b4b14f09a3ac855d6e1714532798562123[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 00:36:49 2022 +0100
+
+    cursor cares
+
+[33mcommit 662340f75727d63109114948462a62bc965a18ff[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 00:36:34 2022 +0100
+
+    cursor about-us
+
+[33mcommit 73ff643e602c869ca71ad7c0fcae97617db2c255[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 00:35:09 2022 +0100
+
+    cursor index
+
+[33mcommit bb86a23105235eb21aaf01bfe7a94f230145dac0[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Tue Nov 15 00:34:41 2022 +0100
+
+    cursor config
+
+[33mcommit f5c245b212659a0464aa4be3d0cc85a574badf37[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Mon Nov 14 01:04:00 2022 +0100
+
+    top-sect mobile
+
+[33mcommit 00b8c3000373e65ce9b2037576c21aa3c597ca8d[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Sun Nov 13 03:52:25 2022 +0100
+
+    13/11/22
+
+[33mcommit ce4d72b90d8b6cf6c27355fd7345e3865c46a7c5[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Sun Nov 13 02:35:50 2022 +0100
+
+    13/11/22
+
+[33mcommit a4400a9dab39198a5a7fa2073785e84555f7db32[m
+Author: JCerme <jorgealfaro196@gmail.com>
+Date:   Sat Nov 12 20:02:43 2022 +0100
+
+    12/11/22
+
+[33mcommit 62fc1298af1a807083bb32377aadc47c64fa970b[m
+Author: Jorgecerme09 <jorgealfaro196@gmail.com>
+Date:   Fri Nov 11 09:53:48 2022 +0100
+
+    11/11/22
+
+[33mcommit dbd90b8ad6af38322e76017ab30d1162d312a4ed[m
+Author: Jorgecerme09 <jorgealfaro196@gmail.com>
+Date:   Fri Nov 11 09:32:07 2022 +0100
+
+    gitpull.php
+
+[33mcommit c54252b86faff2ceb19a5528b29ead52cfe636e7[m
+Author: Jorgecerme09 <jorgealfaro196@gmail.com>
+Date:   Thu Nov 10 00:47:10 2022 +0100
+
+    10/11/22
+
+[33mcommit a37539ce129db8d8f02c71242df3b4f3d8c6dc24[m
+Author: Jorgecerme09 <jorgealfaro196@gmail.com>
+Date:   Sat Nov 5 23:47:26 2022 +0100
+
+    05/11/22
+
+[33mcommit 57b285d7a282dc67cad81559013aef2e4ac86a48[m
+Author: Jorgecerme09 <jorgealfaro196@gmail.com>
+Date:   Sat Nov 5 19:15:35 2022 +0100
+
+    05/11/22

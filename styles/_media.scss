@@ -23,7 +23,7 @@
         margin-top: 15px;
         height: 1px;
         border: 0;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $primaryColor;
         border-radius: 0;
         position: absolute;
         pointer-events: none;
@@ -39,7 +39,7 @@
         pointer-events: none;
         z-index: 99999999;
         transform: rotate(-45deg);
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $primaryColor;
     }
     .link::after{
         content: '';
@@ -51,7 +51,7 @@
         pointer-events: none;
         z-index: 99999999;
         transform: rotate(45deg);
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $primaryColor;
     }
     
     /* container */
@@ -93,7 +93,7 @@
                         transition: 300ms;
                         a {
                             text-decoration: none;
-                            color: black;
+                            color: $primaryColor;
                             padding: 0 5px;
                             position: relative;
                             &:before {
@@ -103,7 +103,7 @@
                                 bottom: -3px;
                                 width: 0%;
                                 height: 1px;
-                                background-color: black;
+                                background-color: $primaryColor;
                                 transition: 500ms cubic-bezier(.75, 0, .25, 1);
                                 z-index: -1;
                             }
@@ -192,7 +192,7 @@
                     line-height: 1;
                     li a {
                         text-decoration: none;
-                        color: black;
+                        color: $primaryColor;
                     }
                 }
             }
@@ -221,7 +221,7 @@
 
     /* top section */
     .top-sect {
-        background: linear-gradient(135deg, white, #f1f1f1);
+        background: linear-gradient(135deg, $secondaryColor, #f1f1f1);
         padding-bottom: 100px;
         .hero {
             height: 100vh;
@@ -277,14 +277,14 @@
                 gap: 50px;
                 flex: 75%;
                 #prod-sect .prod{
-                    background-color: white;
+                    background-color: $secondaryColor;
                     min-width: 250px;
                     height: 400px;
-                    border: 1px solid black;
+                    border: 1px solid $primaryColor;
                     position: relative;
                     .content{
                         padding: 15px;
-                        color: black;
+                        color: $primaryColor;
                         h3{
                             font-size: 24px;
                             margin: 10px 0px;
@@ -356,14 +356,14 @@
     #shop .products {
         grid-template-columns: repeat(2, 1fr);
         .prod{
-            background-color: white;
+            background-color: $secondaryColor;
             min-width: 250px;
             height: 400px;
-            border: 1px solid black;
+            border: 1px solid $primaryColor;
             position: relative;
             .content{
                 padding: 15px;
-                color: black;
+                color: $primaryColor;
                 h3 {
                     font-size: 24px;
                     margin: 10px 0px;
@@ -406,10 +406,27 @@
     #cares{
         div:not(.hero){
             flex-direction: row;
-        }
-        .sect1 {
             img{
                 width: 50%;
+            }
+            .content{
+                flex-direction: column;
+                .parraf{
+                    flex-direction: column;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    order:1;
+                }
+                .content{
+                    order: 0;
+                }
+            }
+        }
+        .sect1 {
+            flex-direction: row;
+            img{
                 height: auto;
                 padding-right: 50px;
                 margin: 0;
@@ -420,7 +437,6 @@
         }
         .sect2{
             img{
-                width: 50%;
                 height: auto;
                 padding-left: 50px;
                 margin: 0;
@@ -464,6 +480,9 @@
                 display: none;
         }
     }
+    #shop .products{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media screen and (min-width: 1480px) {
     #shop {
@@ -477,17 +496,20 @@
                 transition: 600ms;
                 padding-right: 50px;
             }
+            .products {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0;
+                flex: 75%;
+            }
         }
         #filterBtn{
             display: none;
         }
     }
     #prod-sect {
-        .shop-content{
-            flex-direction: row;
-            .products {
-                padding: 0;
-            }
+        .products {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0;
         }
     }
 }

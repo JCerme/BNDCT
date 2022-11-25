@@ -4,8 +4,8 @@ html{
         cursor: none;
         box-sizing: border-box;
         &::selection{
-            background-color: black;
-            color: white;
+            background-color: $primaryColor;
+            color: $secondaryColor;
         }
     }
     body{
@@ -36,10 +36,10 @@ html{
         }
         &scrollbar-track {
             background: rgba(255, 255, 255, 0.2);
-            border-left: 1px solid black;
+            border-left: 1px solid $primaryColor;
         }
         &scrollbar-thumb {
-            background: black;
+            background: $primaryColor;
         }
         &scrollbar-thumb:hover {
             background: #333;
