@@ -51,7 +51,7 @@
         }
         .content span{
             color: $primaryColor;
-            font-size: 13px;
+            font-size: 32px;
             letter-spacing: 5;
         }
     }
@@ -66,72 +66,6 @@
             font-weight: 100;
             letter-spacing: 10;
             text-transform: uppercase;
-        }
-        .products{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            text-align: left;
-            gap: 10px;
-            a{
-                text-decoration: none;
-                .prod{
-                    background-color: $secondaryColor;
-                    width: 100%;
-                    height: 300px;
-                    border: 1px solid $primaryColor;
-                    border-radius: $borderRadius;
-                    position: relative;
-                    &:hover{
-                        box-shadow: $primaryColor 7.5px 7.5px 0px;
-                    }
-                    .img {
-                        width: 100%;
-                        height:150px;
-                        overflow: hidden;
-                        img {
-                            background-color: lightgray;
-                            width: 100%;
-                            height: 100%;
-                            filter: grayscale(100%);
-                            object-fit: cover;
-                            object-position: center;
-                        }
-                    }
-                    .content{
-                        padding: 10px;
-                        color: $primaryColor;
-                        h3{
-                            font-family: "Lato", "Helvetica Neue",Arial, Helvetica, sans-serif;
-                            font-size:18px;
-                            margin:10px 0px;
-                            padding:0;
-                            font-weight: 600;
-                            letter-spacing: 1.5;
-                            line-height: 1;
-                        }
-                    }
-                    .prod-footer{
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background-color: $primaryColor;
-                        padding: 15px;
-                        display: flex;
-                        justify-content: space-between;
-                        color: $secondaryColor;
-                        .arrow{
-                            font-size: 24px;
-                            margin-top: -7.5px;
-                        }
-                        .price-before{
-                            color: gray;
-                            text-decoration: line-through;
-                            margin-right: 5px;
-                        }
-                    }
-                }
-            }
         }
         .seemoreprod{
             margin: 35px 0;
@@ -162,7 +96,72 @@
         }
     }
 }
-
+.products{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        .prod{
+            background-color: $secondaryColor;
+            min-width: 250px;
+            border: 1px solid $primaryColor;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &:hover{
+                box-shadow: $primaryColor 7.5px 7.5px 0px;
+            }
+            .img {
+                width: 100%;
+                overflow: hidden;
+                img {
+                    background-color: lightgray;
+                    width: 100%;
+                    filter: grayscale(100%);
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            .content{
+                padding: 10px;
+                color: $primaryColor;
+                h3{
+                    font-family: "Lato", "Helvetica Neue",Arial, Helvetica, sans-serif;
+                    font-size:26px;
+                    margin:10px 0px;
+                    padding:0;
+                    font-weight: 600;
+                    letter-spacing: 1.5;
+                    line-height: 1;
+                    margin-right: 30%;
+                }
+            }
+            .prod-footer{
+                position: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: $primaryColor;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                color: $secondaryColor;
+                .arrow{
+                    font-size: 24px;
+                    margin-top: -7.5px;
+                }
+                .price-before{
+                    color: gray;
+                    text-decoration: line-through;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
 
 /** black banner **/
 .black-banner .container{
@@ -287,72 +286,6 @@
             transition: 600ms;
         }
     }
-    .products{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        text-align: left;
-        gap: 10px;
-        padding: 0;
-        a{
-            text-decoration: none;
-        }
-        .prod{
-            background-color: $secondaryColor;
-            width: 100%;
-            height: 300px;
-            border: 1px solid $primaryColor;
-            position: relative;
-            .content{
-                padding: 10px;
-                color: $primaryColor;
-                h3{
-                    font-family: "Lato", "Helvetica Neue",Arial, Helvetica, sans-serif;
-                    font-size:18px;
-                    margin:10px 0px;
-                    padding:0;
-                    font-weight: 600;
-                    letter-spacing: 1.5;
-                    line-height: 1;
-                }
-            }
-            .prod-footer{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background-color: $primaryColor;
-                padding: 15px;
-                display: flex;
-                justify-content: space-between;
-                color: $secondaryColor;
-                .arrow{
-                    font-size: 24px;
-                    margin-top: -7.5px;
-                }
-                .price-before{
-                    color: gray;
-                    text-decoration: line-through;
-                    margin-right: 5px;
-                }
-            }
-            &:hover{
-                box-shadow: $primaryColor 7.5px 7.5px 0px;
-            }
-        }
-        .img {
-            width: 100%;
-            height:150px;
-            overflow: hidden;
-            img {
-                background-color: lightgray;
-                width: 100%;
-                height: 100%;
-                filter: grayscale(100%);
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-    } 
     #filterBtn{
         color: $primaryColor;
         width: 100%;
@@ -507,6 +440,7 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            margin: 150px auto;
             form{
                 display: flex;
                 flex-direction: column;

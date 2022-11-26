@@ -276,12 +276,14 @@
                 text-align: left;
                 gap: 50px;
                 flex: 75%;
-                #prod-sect .prod{
+                .prod{
                     background-color: $secondaryColor;
                     min-width: 250px;
-                    height: 400px;
                     border: 1px solid $primaryColor;
-                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .content{
                         padding: 15px;
                         color: $primaryColor;
@@ -291,9 +293,6 @@
                             margin-right: 50px;
                             padding: 0;
                         }
-                    }
-                    .img{
-                        height: 250px;
                     }
                 }
             }
@@ -358,7 +357,6 @@
         .prod{
             background-color: $secondaryColor;
             min-width: 250px;
-            height: 400px;
             border: 1px solid $primaryColor;
             position: relative;
             .content{
@@ -497,7 +495,7 @@
                 padding-right: 50px;
             }
             .products {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 padding: 0;
                 flex: 75%;
             }

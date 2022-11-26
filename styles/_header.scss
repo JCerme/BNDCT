@@ -11,7 +11,7 @@ header{
     transition: 500ms;
     .header{
         width: 80%;
-        margin:0 auto;
+        margin:0 auto !important;
         display: grid;
         grid-template-areas:
         "logo nav nav nav nav icons"
