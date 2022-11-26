@@ -1,4 +1,4 @@
-/**** GLOBAL ****/
+// GLOBAL
 html{
     *{
         cursor: none;
@@ -14,22 +14,14 @@ html{
         font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
         font-weight: 400;
         overflow-x: hidden;
-        /* titles */
+        background: $bgBody;
+        // titles 
         h1, h2, h3, h4, h5, h6{
             font-family: "THUNDER", "Helvetica Neue", Helvetica, Arial;
             font-weight: 800;
         }
-         /* cursor 
-        .cursor{
-            display: none;
-        }*/
-        /* containers */
-        .container{
-            width: 80% !important;
-            margin: 50px auto;
-        }
     }
-    /* webkit */
+    // webkit
     ::-webkit-{
         &scrollbar {
         width: 10px;

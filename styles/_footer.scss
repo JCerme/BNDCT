@@ -1,6 +1,6 @@
-/**** FOOTER ****/
+// FOOTER
 footer{
-    background: linear-gradient(135deg, $secondaryColor,#f1f1f1);
+    background: $gradient-bg;
     .footer{
         display: grid;
         grid-template-areas: "category category category category logofoot logofoot"

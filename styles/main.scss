@@ -6,8 +6,8 @@
 
 /**** INDEX ****/
 .top-sect{
+    background: $gradient-bg;
     padding-bottom: 50px;
-
     /** hero **/
     .hero{
         height: 50vh;
@@ -212,10 +212,18 @@
 /**** SHOP ****/
 
 #shop{
-    padding-bottom: 100px;  
+    padding-bottom: 100px;
+    .container{
+        &:has(#filterBtn){
+            margin-bottom: 0;
+        }
+        &:has(.filters){
+            margin-top: 25px;
+        }
+    }
     .hero{
         color: $primaryColor;
-        background: linear-gradient(135deg, $secondaryColor,#f1f1f1);
+        background: $gradient-bg;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -312,14 +320,6 @@
     }
 }
 
-#shop .container:has(#filterBtn){
-    margin-bottom: 0;
-}
-#shop .container:has(.filters){
-    margin-top: 25px;
-}
-
-
 
 /*********************************************************/
 
@@ -332,7 +332,7 @@
     padding-bottom: 100px;  
     .hero{
         color: $primaryColor;
-        background: linear-gradient(135deg, $secondaryColor,#f1f1f1);
+        background: $gradient-bg;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -360,6 +360,7 @@
         margin-top: 0;
     }
     .sect1{
+        margin-top: 150px;
         padding-left: 0px;
         display: flex;
         flex-direction: column;
@@ -401,7 +402,7 @@
 #contact{
     .hero{
         color: $primaryColor;
-        background: linear-gradient(135deg, $secondaryColor,#f1f1f1);
+        background: $gradient-bg;
         height: 300px;
         display: flex;
         justify-content: center;
@@ -434,7 +435,6 @@
             font-weight: 700;
         }
         .container {
-            width: 800px;
             background-color: gray;
             background-position: center;
             background-size: cover;
@@ -530,7 +530,7 @@
     padding-bottom: 100px;
     .hero{
         color: $primaryColor;
-        background: linear-gradient(135deg, $secondaryColor,#f1f1f1);
+        background: $gradient-bg;
         height: 300px;
         display: flex;
         justify-content: center;

@@ -1,16 +1,26 @@
 
-/*********************************************************/
-/************          MEDIA QUERIES           ***********/
-/*********************************************************/
+///////////////////////////////////////////////////////////
+/////////////          MEDIA QUERIES          /////////////
+///////////////////////////////////////////////////////////
 
+// container
+@each $k, $v in $breakpoints{
+    @media screen and (min-width:#{$v}){
+        .container{
+            width: 100%;
+            max-width: #{map-get($max-width-container,$k)};
+            margin: 100px auto;
+        }
+    }
+}
 
 @media screen and (min-width: 768px){
-    /* cursor */
+    // cursor
     .cursor {
         display: block;
         width: 30px;
         height: 30px;
-        border: 1px solid rgba(0,0,0,1);
+        border: 1px solid $primaryColor;
         border-radius: 50%;
         position: absolute;
         pointer-events: none;
@@ -28,47 +38,38 @@
         position: absolute;
         pointer-events: none;
         z-index: 99999999;
-    }
-    .link::before{
-        content: '';
-        width: 10px;
-        height: 1px;
-        top: 3px;
-        left: 20px;
-        position: absolute;
-        pointer-events: none;
-        z-index: 99999999;
-        transform: rotate(-45deg);
-        border-bottom: 1px solid $primaryColor;
-    }
-    .link::after{
-        content: '';
-        width: 10px;
-        height: 1px;
-        top: -5px;
-        left: 20px;
-        position: absolute;
-        pointer-events: none;
-        z-index: 99999999;
-        transform: rotate(45deg);
-        border-bottom: 1px solid $primaryColor;
-    }
-    
-    /* container */
-    .container{
-        width: 70% !important;
-        margin: 100px auto;
+        &::before{
+            content: '';
+            width: 10px;
+            height: 1px;
+            top: 3px;
+            left: 20px;
+            position: absolute;
+            pointer-events: none;
+            z-index: 99999999;
+            transform: rotate(-45deg);
+            border-bottom: 1px solid $primaryColor;
+        }
+        &::after{
+            content: '';
+            width: 10px;
+            height: 1px;
+            top: -5px;
+            left: 20px;
+            position: absolute;
+            pointer-events: none;
+            z-index: 99999999;
+            transform: rotate(45deg);
+            border-bottom: 1px solid $primaryColor;
+        }
     }
 
-
-    /* header */
+    // header 
     header {
         padding: 0;
         .header {
             display: grid;
-            grid-template-areas:
-                "logo logo nav nav nav nav nav nav nav nav icons icons"
-            ;
+            grid-template-areas: "logo logo nav nav nav nav nav nav nav nav icons icons";
             align-items: center;
             margin: 0 auto;
             .logo {
@@ -84,13 +85,13 @@
                     letter-spacing: 1.5;
                     padding: 0;
                     margin: 10px 0;
-                    .active {
-                        font-weight: 600;
-                    }
                     li {
                         display: inline-block;
                         padding: 10px 15px;
                         transition: 300ms;
+                        &.active {
+                            font-weight: 600;
+                        }
                         a {
                             text-decoration: none;
                             color: $primaryColor;
@@ -135,20 +136,20 @@
                 }
                 .shoppingcart {
                     width: 30px;
-                    margin-right: 20px;
+                    margin-left: 20px;
                     padding: 4px;
                 }
                 .user {
                     width: 30px;
-                    margin-right: 20px;
+                    margin-left: 20px;
                 }
             }
             
         }
     }
 
+    // footer
     footer{
-        /* footer */
         .footer {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -219,9 +220,9 @@
     }
 
 
-    /* top section */
+    // top section
     .top-sect {
-        background: linear-gradient(135deg, $secondaryColor, #f1f1f1);
+        background: $gradient-bg;
         padding-bottom: 100px;
         .hero {
             height: 100vh;
@@ -301,7 +302,7 @@
         }
     }
 
-    /* black banner */
+    // black banner
     .black-banner {
         .container {
             flex-direction: row;
@@ -325,9 +326,8 @@
         }
     }
 
-    /* contact us */
+    // contact us
     .contact-us .container {
-        width: 800px;
         background-image: url(../img/contact-us.png);
         background-position: center;
         background-size: cover;
@@ -353,7 +353,7 @@
     }
 
 
-    /* shop */
+    // shop
     #shop .products {
         grid-template-columns: repeat(2, 1fr);
         .prod{
@@ -372,10 +372,7 @@
             }
         }
     }
-
-
-
-    /* about us */
+    // about us
     #about-us {
         .img-sect {
             height: 300px;
@@ -401,7 +398,7 @@
         }
     }
 
-    /* cares */
+    // cares
     #cares{
         div:not(.hero){
             flex-direction: row;
@@ -447,9 +444,7 @@
             .content{
                 order: 0;
             }
-            
         }
-        
     }
 }
 

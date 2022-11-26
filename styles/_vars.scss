@@ -1,6 +1,29 @@
-$primaryColor: rgb(0,0,0);
-$secondaryColor: rgb(255,255,255);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$lightgray: hsl(0, 0%, 95%);
 
-// $primaryColor: rgb(71, 134, 92);
-// $secondaryColor: rgb(255, 224, 87);
+$bgBody: $white;
+$primaryColor: $black;
+$secondaryColor: $white;
+
+$gradient-bg: linear-gradient(135deg, $white,$lightgray);
 $borderRadius: 0px;
+
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$max-width-container: (
+    xs: 80%,
+    sm: 500px,
+    md: 680px,
+    lg: 920px,
+    xl: 1100px,
+    xxl: 1280px
+);

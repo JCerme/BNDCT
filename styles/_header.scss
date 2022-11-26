@@ -1,4 +1,4 @@
-/**** HEADER ****/
+// HEADER
 header{
     width: 100%;
     position: fixed !important;
@@ -9,12 +9,9 @@ header{
     position: relative;
     transition: 500ms;
     .header{
-        width: 80%;
         margin:0 auto !important;
         display: grid;
-        grid-template-areas:
-        "logo nav nav nav nav icons"
-        ;
+        grid-template-areas:"logo nav nav nav nav icons";
         align-items: center;
         .logo{
             grid-area: logo;
@@ -45,12 +42,12 @@ header{
             }
             .shoppingcart{
                 width: 28px;
-                margin-right: 10px;
+                margin-left: 10px;
                 padding: 4px;
             }
             .user{
                 width: 28px;
-                margin-right: 10px;
+                margin-left: 10px;
             }
             .burger{
                 width: 29px;
