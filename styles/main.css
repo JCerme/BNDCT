@@ -112,7 +112,6 @@ header {
   top: 0;
   left: 0;
   z-index: 999999;
-  background-color: rgb(255, 255, 255);
   padding: 10px 0;
   position: relative;
   transition: 500ms;
@@ -355,7 +354,7 @@ footer .copyright {
 }
 .top-sect .hero .content span {
   color: rgb(0, 0, 0);
-  font-size: 32px;
+  font-size: 14px;
   letter-spacing: 5;
 }
 .top-sect #prod-sect {
@@ -408,7 +407,6 @@ footer .copyright {
 }
 .products a .prod {
   background-color: rgb(255, 255, 255);
-  min-width: 250px;
   border: 1px solid rgb(0, 0, 0);
   height: 100%;
   display: flex;
@@ -437,7 +435,7 @@ footer .copyright {
 }
 .products a .prod .content h3 {
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 26px;
+  font-size: 21px;
   margin: 10px 0px;
   padding: 0;
   font-weight: 600;
@@ -1145,6 +1143,11 @@ footer .copyright {
     width: 20%;
     filter: brightness(1.1);
   }
+  .top-sect .hero .content span {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    letter-spacing: 5;
+  }
   .top-sect #prod-sect h2 {
     font-size: 62px;
   }
@@ -1157,7 +1160,6 @@ footer .copyright {
   }
   .top-sect #prod-sect .products .prod {
     background-color: rgb(255, 255, 255);
-    min-width: 250px;
     border: 1px solid rgb(0, 0, 0);
     height: 100%;
     display: flex;
@@ -1225,7 +1227,6 @@ footer .copyright {
   }
   #shop .products .prod {
     background-color: rgb(255, 255, 255);
-    min-width: 250px;
     border: 1px solid rgb(0, 0, 0);
     position: relative;
   }
@@ -1307,14 +1308,14 @@ footer .copyright {
 }
 @media screen and (min-width: 768px) and (max-width: 1150px) {
   #shop .products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   #shop .products .prod {
     min-width: 0;
     width: 100%;
   }
   #prod-sect .products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   #prod-sect .products .prod {
     min-width: 0;
@@ -1323,13 +1324,13 @@ footer .copyright {
 }
 @media screen and (min-width: 1150px) and (max-width: 1480px) {
   .top-sect #prod-sect .products {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
   .top-sect #prod-sect .products a:last-child {
     display: none;
   }
   #shop .products {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 @media screen and (min-width: 1480px) {

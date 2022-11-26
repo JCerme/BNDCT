@@ -263,9 +263,12 @@
                 width: 20%;
                 filter: brightness(1.1);
             }
+            .content span{
+                color: $primaryColor;
+                font-size: 32px;
+                letter-spacing: 5;
+            }
         }
-    }
-    .top-sect{
         #prod-sect{
             h2 {
                 font-size: 62px;
@@ -278,7 +281,6 @@
                 flex: 75%;
                 .prod{
                     background-color: $secondaryColor;
-                    min-width: 250px;
                     border: 1px solid $primaryColor;
                     height: 100%;
                     display: flex;
@@ -356,7 +358,6 @@
         grid-template-columns: repeat(2, 1fr);
         .prod{
             background-color: $secondaryColor;
-            min-width: 250px;
             border: 1px solid $primaryColor;
             position: relative;
             .content{
@@ -455,14 +456,14 @@
     
 @media screen and (min-width: 768px) and (max-width:1150px){
     #shop .products{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         .prod{
             min-width: 0;
             width: 100%;
         }
     }
     #prod-sect .products {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         .prod{
             min-width: 0;
             width: 100%;
@@ -473,13 +474,13 @@
 
 @media screen and (min-width:1150px) and (max-width: 1480px){
     .top-sect #prod-sect .products{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr) !important;
         a:last-child{
                 display: none;
         }
     }
     #shop .products{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 @media screen and (min-width: 1480px) {
