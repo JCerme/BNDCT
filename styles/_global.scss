@@ -38,3 +38,52 @@ html{
         }
     }
 }
+
+// cursor
+.cursor {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $primaryColor;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 99999999;
+}
+.link{
+    width: 30px;
+    margin-top: 15px;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid $primaryColor;
+    border-radius: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 99999999;
+    &::before{
+        content: '';
+        width: 10px;
+        height: 1px;
+        top: 3px;
+        left: 20px;
+        position: absolute;
+        pointer-events: none;
+        z-index: 99999999;
+        transform: rotate(-45deg);
+        border-bottom: 1px solid $primaryColor;
+    }
+    &::after{
+        content: '';
+        width: 10px;
+        height: 1px;
+        top: -5px;
+        left: 20px;
+        position: absolute;
+        pointer-events: none;
+        z-index: 99999999;
+        transform: rotate(45deg);
+        border-bottom: 1px solid $primaryColor;
+    }
+}
