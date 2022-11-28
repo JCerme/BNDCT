@@ -185,11 +185,19 @@
             font-size: 26px;
             font-weight: 300;
             overflow-x: hidden;
-            h1 {
-                font-size: 230px;
-                margin: 0;
-                padding: 0;
-                margin-bottom: -50px;
+            .content{
+                z-index: 0;
+                h1 {
+                    font-size: 230px;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: -50px;
+                }
+                span{
+                    color: $primaryColor;
+                    font-size: 32px;
+                    letter-spacing: 5;
+                }
             }
             img {
                 position: absolute;
@@ -214,11 +222,6 @@
                 left: 22.5%;
                 width: 20%;
                 filter: brightness(1.1);
-            }
-            .content span{
-                color: $primaryColor;
-                font-size: 32px;
-                letter-spacing: 5;
             }
         }
         #prod-sect{
@@ -250,6 +253,9 @@
                     }
                 }
             }
+            .seemoreprod{
+                margin-bottom: 35px;
+            }
         }
     }
 
@@ -258,7 +264,7 @@
         .container {
             flex-direction: row;
             .content {
-                font-size: 21px;
+                font-size: 18px;
                 padding-right: 150px;
                 h2 {
                     font-size: 62px;
@@ -284,6 +290,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: none;
+        margin: 150px auto;
         .overlay {
             padding: 75px;
         }

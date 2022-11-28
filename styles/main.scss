@@ -8,6 +8,7 @@
 .top-sect{
     background: $gradient-bg;
     padding-bottom: 50px;
+    overflow-x: hidden;
     /** hero **/
     .hero{
         height: 50vh;
@@ -23,11 +24,11 @@
         }
         .equity-esculpture{
             right: 0;
-            bottom:-150;
+            bottom:-150px;
             width: 100%;
             filter: brightness(1.2);
             opacity: 0.3 !important;
-            z-index:-1;
+            z-index:0;
         }
         .woman-esculpture{
             left: 0;
@@ -41,18 +42,22 @@
             left:60%;
             width: 30%;
             filter: brightness(1.1);
+            z-index: 99;
         }
-        h1{
-            color: $primaryColor;
-            font-size: 115px;
-            margin: 0;
-            padding: 0;
-            margin-bottom: -20px;
-        }
-        .content span{
-            color: $primaryColor;
-            font-size: 14px;
-            letter-spacing: 5;
+        .content{
+            z-index: 1;
+            h1{
+                color: $primaryColor;
+                font-size: 115px;
+                margin: 0;
+                padding: 0;
+                margin-bottom: -30px;
+            }
+            span{
+                color: $primaryColor;
+                font-size: 22px;
+                letter-spacing: 5;
+            }
         }
     }
 
@@ -68,7 +73,7 @@
             text-transform: uppercase;
         }
         .seemoreprod{
-            margin: 35px 0;
+            margin-top: 35px;
             a{
                 font-size: 21px;
                 font-weight: 700;
@@ -439,7 +444,7 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            margin: 150px auto;
+            margin: 50px auto;
             form{
                 display: flex;
                 flex-direction: column;

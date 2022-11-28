@@ -188,12 +188,12 @@ header .header .icons img:hover {
 }
 header .header .icons .shoppingcart {
   width: 28px;
-  margin-left: 10px;
+  margin-right: 10px;
   padding: 4px;
 }
 header .header .icons .user {
   width: 28px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 header .header .icons .burger {
   width: 29px;
@@ -343,6 +343,7 @@ footer .copyright {
 .top-sect {
   background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 0%, 95%));
   padding-bottom: 50px;
+  overflow-x: hidden;
   /** hero **/
   /** product section  **/
 }
@@ -361,11 +362,11 @@ footer .copyright {
 }
 .top-sect .hero .equity-esculpture {
   right: 0;
-  bottom: -150;
+  bottom: -150px;
   width: 100%;
   filter: brightness(1.2);
   opacity: 0.3 !important;
-  z-index: -1;
+  z-index: 0;
 }
 .top-sect .hero .woman-esculpture {
   left: 0;
@@ -379,17 +380,21 @@ footer .copyright {
   left: 60%;
   width: 30%;
   filter: brightness(1.1);
+  z-index: 99;
 }
-.top-sect .hero h1 {
+.top-sect .hero .content {
+  z-index: 1;
+}
+.top-sect .hero .content h1 {
   color: hsl(0deg, 0%, 0%);
   font-size: 115px;
   margin: 0;
   padding: 0;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
 }
 .top-sect .hero .content span {
   color: hsl(0deg, 0%, 0%);
-  font-size: 14px;
+  font-size: 22px;
   letter-spacing: 5;
 }
 .top-sect #prod-sect {
@@ -404,7 +409,7 @@ footer .copyright {
   text-transform: uppercase;
 }
 .top-sect #prod-sect .seemoreprod {
-  margin: 35px 0;
+  margin-top: 35px;
 }
 .top-sect #prod-sect .seemoreprod a {
   font-size: 21px;
@@ -763,7 +768,7 @@ footer .copyright {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 150px auto;
+  margin: 50px auto;
 }
 .contact-us .container form {
   display: flex;
@@ -1126,11 +1131,19 @@ footer .copyright {
     font-weight: 300;
     overflow-x: hidden;
   }
-  .top-sect .hero h1 {
+  .top-sect .hero .content {
+    z-index: 0;
+  }
+  .top-sect .hero .content h1 {
     font-size: 230px;
     margin: 0;
     padding: 0;
     margin-bottom: -50px;
+  }
+  .top-sect .hero .content span {
+    color: hsl(0deg, 0%, 0%);
+    font-size: 32px;
+    letter-spacing: 5;
   }
   .top-sect .hero img {
     position: absolute;
@@ -1155,11 +1168,6 @@ footer .copyright {
     left: 22.5%;
     width: 20%;
     filter: brightness(1.1);
-  }
-  .top-sect .hero .content span {
-    color: hsl(0deg, 0%, 0%);
-    font-size: 32px;
-    letter-spacing: 5;
   }
   .top-sect #prod-sect h2 {
     font-size: 62px;
@@ -1189,11 +1197,14 @@ footer .copyright {
     margin-right: 50px;
     padding: 0;
   }
+  .top-sect #prod-sect .seemoreprod {
+    margin-bottom: 35px;
+  }
   .black-banner .container {
     flex-direction: row;
   }
   .black-banner .container .content {
-    font-size: 21px;
+    font-size: 18px;
     padding-right: 150px;
   }
   .black-banner .container .content h2 {
@@ -1215,6 +1226,7 @@ footer .copyright {
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
+    margin: 150px auto;
   }
   .contact-us .container .overlay {
     padding: 75px;
