@@ -33,7 +33,7 @@
                 ul {
                     font-size: 20px;
                     font-weight: 300;
-                    letter-spacing: 1.5;
+                    letter-spacing: 1.5px;
                     padding: 0;
                     margin: 10px 0;
                     li {
@@ -122,14 +122,14 @@
                     font-size: 21px;
                     display: block;
                     line-height: 0.9;
-                    letter-spacing: 5;
+                    letter-spacing: 5px;
                 }
             }
             div:not(.logo){
                 h3 {
-                    font-size: 28px;
+                    font-size: 31px;
                     font-weight: 500;
-                    letter-spacing: 2.5;
+                    letter-spacing: 2.5px;
                     margin-top: 0;
                     margin-bottom: 5px;
                 }
@@ -138,8 +138,8 @@
                     margin: 0;
                     padding: 0;
                     padding-left: 10px;
-                    font-size: 18px;
-                    letter-spacing: 2.5;
+                    font-size: 21px;
+                    letter-spacing: 2.5px;
                     font-weight: 300;
                     line-height: 1;
                     li a {
@@ -196,7 +196,7 @@
                 span{
                     color: $primaryColor;
                     font-size: 32px;
-                    letter-spacing: 5;
+                    letter-spacing: 5px;
                 }
             }
             img {
@@ -254,6 +254,7 @@
                 }
             }
             .seemoreprod{
+                font-size: 21px;
                 margin-bottom: 35px;
             }
         }
@@ -264,7 +265,7 @@
         .container {
             flex-direction: row;
             .content {
-                font-size: 18px;
+                font-size: 21px;
                 padding-right: 150px;
                 h2 {
                     font-size: 62px;
@@ -300,7 +301,7 @@
             margin: 0;
             margin-bottom: 20px;
             padding: 0;
-            letter-spacing: 2.5;
+            letter-spacing: 2.5px;
             font-weight: 700;
         }
         form{
