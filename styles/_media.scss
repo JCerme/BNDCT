@@ -425,7 +425,11 @@
     }
     
 }
-
+@media screen and (min-width:1150px){
+    .cursor{
+        display: block;
+    }
+}
 @media screen and (min-width:1150px) and (max-width: 1480px){
     .top-sect #prod-sect .products{
         grid-template-columns: repeat(3, 1fr) !important;
