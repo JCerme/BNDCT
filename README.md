@@ -1,13 +1,14 @@
 
 #  ◽ BENEDICT Clothing
 
-Página web desarrollada como práctica de entrega en el curso de Desarollo Web de Coderhouse.
+This website was developed as a practice assignment for the Web Development course at Coderhouse.
 
-Tiene diferentes secciones algo completas por las que se puede navegar con facilidad. Dispone de responsive en toda la web e incluso incorporé una librería de animaciones llamada "AOS Library", la cual os recomiendo.
+It has several fairly complete sections that can be easily navigated. It is fully responsive throughout the website and I even incorporated an animation library called "AOS Library", which I recommend.
 
-Primero, desarrolle un boceto detallado del diseño en Figma y una vez encontré el estilo perfecto lo integré en HTML y SASS. Todas las imágenes han sido optimizadas y editadas para cumplir la identidad de marca que he querido representar.
+First, I developed a detailed design sketch in Figma and once I found the perfect style, I integrated it into HTML and SASS. All images have been optimized and edited to meet the brand identity I wanted to represent.
 
-El Javascript integrado es muy básico, simplemente para darle un cursor personalizado y hacer el menú responsive.
+The integrated Javascript is very basic, just to give it a custom cursor and make the menu responsive.
+
 ## 🛠 Skills Utilizadas
 HTML, CSS, SASS y Javascript 
 
@@ -17,24 +18,24 @@ HTML, CSS, SASS y Javascript
 ![App Screenshot](https://www.jcerme.com/other/benedict-1.png)
 ![App Screenshot](https://www.jcerme.com/other/benedict-2.png)
 
-Algunas secciones no son funcionales como la tienda o los formularios ya que no era necesaria la utilización de Javascript:
+Some sections are not functional, such as the store or forms, as the use of Javascript was not necessary:
 
 ![App Screenshot](https://www.jcerme.com/other/benedict-4.png)
 
-## 📖 ¿Qué he aprendido?
+## 📖 What I Have Learned?
 
-En este proyecto aprendí muchísimo sobre SASS, ya que nunca había tenido la oportunidad de utilizarlo o aprenderlo. Fue mi primer proyecto con SASS y he acabado muy contento y orgulloso del resultado. Por otro lado, fue un curso súper completo donde repasaron temas como el SEO, FTP o la utilización de alguna librería CSS como Bootstrap.
+In this project, I learned a lot about SASS since I had never had the opportunity to use or learn it before. It was my first project with SASS and I am very happy and proud of the result. On the other hand, it was a very complete course that covered topics such as SEO, FTP, or the use of some CSS libraries like Bootstrap.
 
 
-## 🚀 Sobre Mí 
-Mi nombre es Jorge, pero prefiero que me llamen Cerme (JCerme).
+## 🚀 About Me
+My name is Jorge, but I prefer to be called Cerme (JCerme).
 
-Soy Técnico Superior en Desarrollo de Aplicaciones Web con amplios conocimientos en Back-end y Front-end (Full-Stack Developer).
+I am a Superior Technician in Web Application Development with extensive knowledge in Back-end and Front-end (Full-Stack Developer).
 
-También tengo conocimientos en Ciberseguridad y Diseño UX/UI entre muchos otros. Me encanta conocer el mundo tecnológico y mi objetivo es ofrecer al usuario una experiencia cómoda, fiable y atractiva.
+I also have knowledge in Cybersecurity and UX/UI Design, among many others. I love to explore the technological world, and my goal is to offer the user a comfortable, reliable, and attractive experience.
 
-Cualquier sugerencia o aportación es bienvenida.
-Podéis contactarme en: 
+Any suggestions or contributions are welcome.
+You can contact me at:
 
 [![portfolio](https://img.shields.io/badge/https://jcerme.com-5f17ce?style=for-the-badge&logo=ko-fi&logoColor=white)](https://jcerme.com/)
 [![linkedin](https://img.shields.io/badge/jorge_cermeno-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/jorge-cermeno)
