@@ -1,3 +1,4 @@
+![App Screenshot](https://benedict.jcerme.com/img/benedict-1.png)
 
 #  ◽ BENEDICT Clothing
 
@@ -11,16 +12,6 @@ The integrated Javascript is very basic, just to give it a custom cursor and mak
 
 ## 🛠 Skills Utilizadas
 HTML, CSS, SASS y Javascript 
-
-
-## 📸 Screenshots
-
-![App Screenshot](https://www.jcerme.com/other/benedict-1.png)
-![App Screenshot](https://www.jcerme.com/other/benedict-2.png)
-
-Some sections are not functional, such as the store or forms, as the use of Javascript was not necessary:
-
-![App Screenshot](https://www.jcerme.com/other/benedict-4.png)
 
 ## 📖 What I Have Learned?
 
